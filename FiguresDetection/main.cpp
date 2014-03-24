@@ -48,6 +48,4 @@ int main()
 
 	test("test1.txt", f, builder, pts);
 	test("test2.txt", f, builder, pts);
-
-	std::cin.get();
 }
