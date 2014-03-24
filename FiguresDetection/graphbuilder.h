@@ -6,6 +6,7 @@
 class GraphBuilder
 {
 public:
+	//returns all the edges of graph
 	std::set<Line> getEdges(std::vector<Point> &points);
 private:
 	static bool intersects(const Point &s1, const Point &e1,
