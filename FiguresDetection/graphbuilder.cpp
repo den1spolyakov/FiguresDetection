@@ -8,7 +8,7 @@ std::set<Line> GraphBuilder::getEdges(std::vector<Point> &points)
 	for (std::vector<Point>::iterator it = points.begin();
 		it != points.end() - 1; ++it)
 	{
-			addLine(Line(*it, *(it + 1)), lines);
+		addLine(Line(*it, *(it + 1)), lines);
 	}
 	//add final line which closes figure
 	addLine(Line(*(points.end() - 1), *(points.begin())), lines);
