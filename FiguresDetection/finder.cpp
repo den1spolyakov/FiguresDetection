@@ -1,6 +1,7 @@
 #include "finder.h"
 #include <iostream>
 
+//initialize graph
 void Finder::init(std::set<Line> &lines)
 {
 	for (std::set<Line>::iterator it = lines.begin(); it != lines.end();
@@ -12,6 +13,7 @@ void Finder::init(std::set<Line> &lines)
 	}
 }
 
+//main procedure to find facets
 ROW(ROW(Point)) Finder::findFigures(std::set<Line> &lines)
 {
 	init(lines);
