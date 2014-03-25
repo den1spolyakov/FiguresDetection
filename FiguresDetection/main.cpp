@@ -15,7 +15,7 @@ void input(std::istream &is, std::vector<Point> &points)
 	}
 }
 
-void output(std::ostream &os, std::vector<std::vector<Point>> result)
+void output(std::ostream &os, const std::vector<std::vector<Point>> &result)
 {
 	os << "-----------------------------------\n";
 	os << result.size() << " figures was found.\n\n";
