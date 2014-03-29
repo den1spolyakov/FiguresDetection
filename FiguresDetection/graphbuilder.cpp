@@ -78,7 +78,7 @@ bool GraphBuilder::intersects(const Point &s1, const Point &e1,
 void GraphBuilder::addLine(const Line &l, std::set<Line> &lines)
 {
 	//add line if it's not present (lines are undirected)
-	if (lines.count(Line(l.second, l.first)) == 0)
+	if (lines.count(Line(l.second, l.first)) == 0 && l.second != l.first)
 	{
 		lines.insert(l);
 	}
